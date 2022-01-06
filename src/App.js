@@ -1,7 +1,8 @@
 
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import Expense from './Components/js/Data/Expense';
+import NewExpense from './Components/js/NewData/NewExpense';
 
 
 const App = () => {
@@ -32,9 +33,17 @@ const App = () => {
       date: new Date(2021, 10, 20)
     }
   ]
+  const [exp, setExp] = useState(expense)
+
+  const newEntryAdded = (newData) => {
+    // expense.push(newData)
+    // setExp(expense)
+    console.log(newData)
+  }
 
   return (
     <div className="App">
+      <NewExpense onNewExpenseEntry={newEntryAdded}/>
       <Expense data={expense}/>
     </div>
   );
