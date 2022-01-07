@@ -7,9 +7,9 @@ const NewExpense = (props) => {
     const savedNewData = (newData) => {
         const expenseNewData = {
             ...newData,
-            id: Math.random().toString()
+            id: (props.idLength + 1)
         };
-        // console.log(expenseNewData)
+        console.log("Id " + expenseNewData.id)
         props.onNewExpenseEntry(expenseNewData)
     }
 

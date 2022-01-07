@@ -36,15 +36,15 @@ const App = () => {
   const [exp, setExp] = useState(expense)
 
   const newEntryAdded = (newData) => {
-    // expense.push(newData)
-    // setExp(expense)
-    console.log(newData)
+    setExp((prevState) => {
+      return [newData, ...prevState]
+    })
   }
 
   return (
     <div className="App">
-      <NewExpense onNewExpenseEntry={newEntryAdded}/>
-      <Expense data={expense}/>
+      <NewExpense onNewExpenseEntry={newEntryAdded} idLength={exp.length}/>
+      <Expense data={exp}/>
     </div>
   );
 
