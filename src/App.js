@@ -33,6 +33,7 @@ const App = () => {
       date: new Date(2021, 10, 20)
     }
   ]
+
   const [exp, setExp] = useState(expense)
 
   const newEntryAdded = (newData) => {

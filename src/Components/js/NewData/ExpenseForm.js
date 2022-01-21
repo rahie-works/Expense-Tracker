@@ -16,15 +16,13 @@ const ExpenseForm = (props) => {
     }
 
     const dateChangeHandler = (event) => {
-        console.log(event)
+        console.log("Date :",event.target.value)
         setEnteredDate(event.target.value)
     }
 
     const submitHandler = (event) => {
         event.preventDefault();
-        console.log(event)
         if(enteredTitle !== "" && enteredAmount !== "" && enteredDate !== "" ) {
-            console.log('EnteredTitle : ', enteredTitle)
             const expenseData = {
                 title: enteredTitle,
                 amount: +enteredAmount,
@@ -43,27 +41,27 @@ const ExpenseForm = (props) => {
     <form onSubmit={submitHandler}>
         <div className='new-expense__controls'>
             <div className='new-expense__control'>
-                <label>Title</label>
+                <label>TITLE</label>
                 <input type='text' 
                     value={enteredTitle} 
                     onChange={titleChangeHandler}/>
             </div>
             <div className='new-expense__control'>
-                <label>Amount</label>
+                <label>AMOUNT</label>
                 <input type='number' min="0.01" step="0.01" 
-                    value={enteredAmount} 
+                    value={enteredAmount}
                     onChange={amountChangeHandler}/>
             </div>
             <div className='new-expense__control'>
-                <label>Date</label>
+                <label>DATE</label>
                 <input type='date' min="2019-01-01" max="2022-12-31" 
                     value={enteredDate} 
                     onChange={dateChangeHandler}/>
             </div>
         </div>
         <div className='new-expense__actions'>
-            <button type='button' onClick={props.onCancel}>Cancel</button>
-            <button type='submit'>Add Expense</button>
+            <button type='button' onClick={props.onCancel}>CANCEL</button>
+            <button type='submit'>ADD EXPENSE</button>
         </div>
     </form>
     );

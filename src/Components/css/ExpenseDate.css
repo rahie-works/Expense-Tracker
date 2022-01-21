@@ -5,14 +5,18 @@
     height: 5.5rem;
     border: 1px solid #ececec;
     background-color: #2a2a2a;
-    color: white;
+    color: rgb(0, 0, 0);
     border-radius: 12px;
     align-items: center;
     justify-content: center;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Calendar-Blank-Vector.svg/1024px-Calendar-Blank-Vector.svg.png);
+    background-position-x: center;
+    background-position-y: 24%;
+    background-size: 190%;
   }
   
   .expense-date__month {
-    font-size: 0.75rem;
+    font-size: 1.25rem;
     font-weight: bold;
   }
   

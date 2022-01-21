@@ -30,7 +30,7 @@ const NewExpense = (props) => {
 
     return (
         <div className='new-expense'>
-            {!showNewExpense && <button title="Add New Expense" onClick={showForm}>Add New Expense</button>}
+            {!showNewExpense && <button title="Add New Expense" onClick={showForm}>+ NEW EXPENSE</button>}
             {showNewExpense && <ExpenseForm onSavingNewData={savedNewData} onCancel={hideForm}/>}
         </div>
         );

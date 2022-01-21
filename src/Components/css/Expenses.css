@@ -4,4 +4,10 @@
     margin: 2rem auto;
     width: 50rem;
     max-width: 95%;
+    /* background-image: url(https://i.pinimg.com/originals/d5/b5/0a/d5b50ace8f9d0e9493786246c342c8c2.jpg); */
+    background-image: url(https://images.unsplash.com/photo-1512389055488-8d82cb26ba6c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmFja2dyb3VuZCUyMGNvdmVyfGVufDB8fDB8fA%3D%3D&w=1000&q=80);
+    background-position-x: right;
+    background-position-y: 10% ;
+    background-size: 100%;
+    background-repeat: no-repeat;
   }

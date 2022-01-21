@@ -6,6 +6,8 @@
     padding-left: 1rem;
     margin: 1rem 0;
     background-color: #4b4b4b;
+    background-image: url(https://naldzgraphics.net/wp-content/uploads/2012/08/20-Ruled.jpg);
+    background-position-x: center;
   }
   
   .expense-item__description {
@@ -19,19 +21,19 @@
   }
   
   .expense-item h2 {
-    color: #3a3a3a;
-    font-size: 1rem;
+    /* color: #3a3a3a; */
+    font-size: 2rem;
     flex: 1;
     margin: 0 1rem;
-    color: white;
+    color: rgb(20, 20, 20);
   }
   
   .expense-item__price {
     font-size: 1rem;
     font-weight: bold;
-    color: white;
-    background-color: #40005d;
-    border: 1px solid white;
+    color: rgb(255, 254, 254);
+    background-color: hsl(0, 3%, 28%);
+    border: 2px solid rgb(22, 3, 105);
     padding: 0.5rem;
     border-radius: 12px;
   }
@@ -45,7 +47,7 @@
     }
   
     .expense-item__description h2 {
-      font-size: 1.25rem;
+      font-size: 1.5rem;
     }
   
     .expense-item__price {
