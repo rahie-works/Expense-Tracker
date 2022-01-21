@@ -10,13 +10,21 @@ const ExpensesList = (props) => {
             </div>
     }
 
+
+    const deletePressed = (itemReceived) => {
+        props.deleteRequired(itemReceived)
+        // console.log(itemReceived)
+    }
+
     return <ul className="expenses-list">
         {props.data.map(expense => (
             <ExpenseItem 
             key={expense.id}
             title={expense.title}
             amount={expense.amount}
-            date={expense.date}/>
+            date={expense.date}
+            item={expense}
+            onDeletePressed={deletePressed}/>
         ))}
     </ul>
 

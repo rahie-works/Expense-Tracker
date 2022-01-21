@@ -16,12 +16,17 @@ const Expense = (props) => {
         return (expense.date.getFullYear().toString() === year || year === 'All');
     })
 
+    const deleteAsked = (itemToDelete) => {
+        props.deleteData(itemToDelete)
+        // console.log(itemToDelete)
+    }
+
     return (
         <div>
             <Card className="expenses">
                 <ExpenseFilter value={year} onYearSelection={yearSelected}/>
                 <ExpenseChart expense={filteredExpenses}/>
-                <ExpensesList data={filteredExpenses}/>
+                <ExpensesList data={filteredExpenses} deleteRequired={deleteAsked}/>
             </Card>
         </div>
     );
