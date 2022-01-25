@@ -19,9 +19,6 @@ The data is fetched from JSON file.
 
 **Screenshots**
 
-
-![Add](https://user-images.githubusercontent.com/84104966/151076466-a95b458b-00bb-4e0d-844d-0a9a5526ef25.JPG)
-![All](https://user-images.githubusercontent.com/84104966/151076467-e69fc6a8-b97a-41ab-89f2-fe3819696add.JPG)
-![First](https://user-images.githubusercontent.com/84104966/151076472-f2064f51-5c06-4b33-953d-90f888083221.JPG)
-![First2](https://user-images.githubusercontent.com/84104966/151076474-c465ff82-53ad-4f9c-ba5a-a154088ca9a8.JPG)
-![Updating](https://user-images.githubusercontent.com/84104966/151076475-9c666109-2f5c-465c-9127-eb098c063962.JPG)
+![Add](https://user-images.githubusercontent.com/84104966/151076707-a596963f-81b5-4a6e-bc49-7ab4f49743aa.JPG)
+![All](https://user-images.githubusercontent.com/84104966/151076710-3dd1d587-6a08-4961-99b2-12d1a2d6bfcb.JPG)
+![Updating](https://user-images.githubusercontent.com/84104966/151076712-c760f3a1-ff39-4592-b37d-4b9cf22fab04.JPG)
