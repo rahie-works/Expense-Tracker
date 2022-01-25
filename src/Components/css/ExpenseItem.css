@@ -9,6 +9,11 @@
     background-image: url(https://naldzgraphics.net/wp-content/uploads/2012/08/20-Ruled.jpg);
     background-position-x: center;
   }
+
+  .btns {
+    display: flex;
+    flex-direction: column;
+  }
   
   .expense-item__description {
     display: flex;
@@ -56,27 +61,55 @@
 
     }
 
-    .expense-item__button {
-      font: inherit;
-      cursor: pointer;
-      padding: 1.0rem 1rem;
+    .btn__del {
       background-image: url(https://cdn3.iconfinder.com/data/icons/social-messaging-ui-color-line/254000/82-512.png);
       background-size: 140%;
       background-position: center 37%;
       background-repeat: no-repeat;
+    }
+
+    .btn__edit {
+      background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT47ZnaLLHnfhp_KUnGFMTS9hbH4dpMCi4aKbK9mNfLmL7dMJubwAkK9o-Ql_VBsSup3yQ&usqp=CAU);
+      background-size: 140%;
+      background-position: center 37%;
+      background-repeat: no-repeat;
+    }
+
+    .expense-item__button {
+      font: inherit;
+      cursor: pointer;
+      padding: 0.75rem 0.65rem;
       border-radius: 12px;
       margin-right: 1rem;
+      margin-top: 0.5rem;
       max-width: 55%;
     }
 
     .expense-item__button:hover {
-      padding: 1.5rem 1.5rem;
-      margin-right: 0.5rem;
+      padding: 1.0rem 0.90rem;
     }
   
     .expense-item__button:active {
       background-color: #0730ac;
       border-color: #02123f;
       transform: translateY(3px);
+    }
+
+    .update__button {
+      cursor: pointer;
+      background-image: linear-gradient(to left, #002747, rgb(5, 148, 196));
+      color: white;
+      padding: 0.45rem 0.35rem;
+      border-radius: 8px;
+      margin-top: 0.5rem;
+      margin-left: 0.35rem;
+    }
+
+    .update__button:hover {
+      background-image: linear-gradient(to left, #064700, rgb(37, 196, 5));
+    }
+
+    #can:hover{
+      background-image: linear-gradient(to left, #470000, rgb(196, 5, 5));
     }
   }

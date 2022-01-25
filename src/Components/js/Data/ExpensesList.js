@@ -16,15 +16,21 @@ const ExpensesList = (props) => {
         // console.log(itemReceived)
     }
 
+    const updateRequest = (item) => {
+        props.updating(item)
+    }
+
     return <ul className="expenses-list">
         {props.data.map(expense => (
             <ExpenseItem 
             key={expense.id}
+            expID={expense.id}
             title={expense.title}
             amount={expense.amount}
             date={expense.date}
             item={expense}
-            onDeletePressed={deletePressed}/>
+            onDeletePressed={deletePressed}
+            onUpdateItem={updateRequest}/>
         ))}
     </ul>
 

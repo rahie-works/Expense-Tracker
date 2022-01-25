@@ -36,7 +36,7 @@ const App = () => {
 
   useEffect(() => {
     getData()
-  }, [])
+  },[])
 
   const newEntryAdded = (newData) => {
     setExp((prevState) => {
@@ -51,10 +51,21 @@ const App = () => {
     setExp(newData)
   }
 
+  const updated = (upData) => {
+    const newData = exp.map( obj => {
+      if( obj.id === upData.id) {
+        return upData
+      } else {
+        return obj
+      }
+    })
+    setExp(newData)
+  }
+
   return (
     <div className="App">
       <NewExpense onNewExpenseEntry={newEntryAdded} idLength={exp.length}/>
-      <Expense data={exp} deleteData={deleteThis}/>
+      <Expense data={exp} deleteData={deleteThis} updationProcess={updated}/>
     </div>
   );
 }

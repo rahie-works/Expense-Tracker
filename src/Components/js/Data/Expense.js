@@ -21,12 +21,16 @@ const Expense = (props) => {
         // console.log(itemToDelete)
     }
 
+    const updateRequest = (item) => {
+        props.updationProcess(item)
+    }
+
     return (
         <div>
             <Card className="expenses">
                 <ExpenseFilter value={year} onYearSelection={yearSelected}/>
                 <ExpenseChart expense={filteredExpenses}/>
-                <ExpensesList data={filteredExpenses} deleteRequired={deleteAsked}/>
+                <ExpensesList data={filteredExpenses} deleteRequired={deleteAsked} updating={updateRequest}/>
             </Card>
         </div>
     );
