@@ -14,7 +14,7 @@ The Expense Tracker is a single page React Native project that displays the expe
 
 **Project Insight**
 
-The project used HTML5, CSS3 and Javascript in React Native platform.
+The project used HTML5, CSS3 and Javascript in React.
 The data is fetched from JSON file.
 
 **Screenshots**
